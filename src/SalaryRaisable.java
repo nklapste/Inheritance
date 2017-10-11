@@ -9,3 +9,7 @@ public interface SalaryRaisable {
     double RaiseSalary();
     // TODO: Lab 3 Part 2 -- Override hashCode() and equals() for SwEngineer and ProjManager
 }
+
+
+
+
