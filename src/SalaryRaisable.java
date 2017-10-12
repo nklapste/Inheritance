@@ -4,7 +4,7 @@
  */
 public interface SalaryRaisable {
     /**
-     * @return      {@code double} The amount of salary after raising
+     * @return {@code double} The amount of salary after raising
      */
     double RaiseSalary();
     // TODO: Lab 3 Part 2 -- Override hashCode() and equals() for SwEngineer and ProjManager
