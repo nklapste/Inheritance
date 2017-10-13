@@ -1,4 +1,4 @@
-public abstract class Employee extends Person {
+public class Employee extends Person {
     private double baseSalary;
 
     public Employee(String name, double baseSalary) {

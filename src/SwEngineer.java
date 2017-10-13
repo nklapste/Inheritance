@@ -1,4 +1,4 @@
-public abstract class SwEngineer extends Employee {
+public class SwEngineer extends Employee {
 
     private String projName;
 
