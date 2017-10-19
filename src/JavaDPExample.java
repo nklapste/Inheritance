@@ -88,15 +88,19 @@ public class JavaDPExample {
     // TODO: Lab 3 Part 3 -- Answer the design pattern questions
     /* Answers to questions
     1. Since getAnimal is a utility class (it does/returns something) without changing internally. It is a essentially
-    "getter" function and as such. Rather it simply takes in
-    arguments and return outputs. In getAnimal this is used to allow specifying a "key" for an animal, and properly
-    return a new instance of that animal (which is then later used with the Animal interface method speak()). Doing
-    this allows for instantiation of animal object cleanly as getAnimal is element of the animalType class not object.
-    Also getAnimal is related to animals but fails to be any
-    specific animal (rather it allows for initialization of a specified animal) thus it fits into the category of
-    static methods. TODO
+    "getter" function or "factory pattern" entrance. As such its useful to make it within its own class (thus
+    segregating the "factory" from other working code). Additionally since we know that this factory method shouldn't
+    be changing throughout its life, making it static method (thus making the factory getAnimal method a "class"
+    method) has been done. This allows getAnimal to be called without constructing a object, thus, the
+    AnimalType class simply needs to be called with the getAnimal method being addressed appropriately.
     2. Factory pattern
     3. This allows for: the creation of different types of animals simply, without type specification (at top level),
-    and all animals are then created using a common standardized interface. TODO
+    and all animals are then created using a common standardized interface. Using a factory pattern and isolating the
+    factory entrance to a static method in a isolated class, locks down the specific classes (outside of this package)
+    that generate unique animals and ensures that creation of generic animal classes follows the method of getAnimal.
+    This use of using a static Animal returning method also ensures that animals (including future newly implemented
+    classes) created are always based off the animal interface (if not it will error before compilation). This "factory
+    pattern" creates a Animal standard and makes implementation consistent. TODO
+
      */
 }
